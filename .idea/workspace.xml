@@ -4,29 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b2178ee-abc7-4b6a-bc06-53d9f3898988" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/checkout/AddProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/checkout/CheckOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/checkout/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/PageObjectManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BadMailLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BadPasswordLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EmptyMail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ForgotPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ForgotPasswordWithBadMail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ForgotPasswordWithNoEmailFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/NoMailLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Steps.java" afterDir="false" />
+    <list default="true" id="5b2178ee-abc7-4b6a-bc06-53d9f3898988" name="Changes" comment="Create automatic test of final project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calc/BankPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calc/BankPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/checkout/CheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/checkout/CheckOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/PageObjectManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/kamil/Desktop/sda Tester/java/toolshop1",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
@@ -68,13 +51,26 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
+  <component name="RunManager" selected="Application.calc.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="toolshop1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="calc.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calc.Main" />
+      <module name="toolshop1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,6 +87,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalcPage.openPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="toolshop1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="calc" />
+      <option name="MAIN_CLASS_NAME" value="calc.CalcPage" />
+      <option name="METHOD_NAME" value="openPage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,7 +124,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.calc.Main" />
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="JUnit.CalcPage.openPage" />
         <item itemvalue="Application.checkout.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -127,7 +141,39 @@
       <option name="presentableId" value="Default" />
       <updated>1700753938986</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create automatic test of final project">
+      <option name="closed" value="true" />
+      <created>1701876942513</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701876942513</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create automatic test of final project">
+      <option name="closed" value="true" />
+      <created>1701876999833</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701876999833</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create automatic test of final project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create automatic test of final project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -174,33 +220,53 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/checkout/CheckOut.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="34" />
+          <line>35</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/checkout/CheckOut.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="35" />
+          <line>36</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/checkout/CheckOut.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/checkout/CheckOut.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/checkout/CheckOut.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/checkout/CheckOut.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/checkout/CheckOut.java</url>
           <line>30</line>
-          <option name="timeStamp" value="36" />
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/checkout/CheckOut.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="37" />
+          <line>29</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/checkout/CheckOut.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="38" />
+          <line>27</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/checkout/CheckOut.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="39" />
+          <line>25</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

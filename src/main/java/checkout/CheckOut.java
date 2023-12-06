@@ -23,9 +23,8 @@ public class CheckOut {
         driver.findElement(By.className("btnSubmit")).click();
         driver.findElement(By.xpath("//button[@data-test=\"proceed-2\"]")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
-        driver.findElement(By.xpath("//div[@class=\"input-group mb-3\"]/input[@formcontrolname=\"state\" and @data-test=\"state\" and @id=\"state\" and @type=\"text\" and @placeholder=\"Your State *\" and @class=\"form-control ng-pristine ng-invalid ng-touched\"]\n")).click();
+        driver.findElement(By.xpath("//input[@id='state']\n")).sendKeys("Mazowsze");
 
-        driver.findElement(By.xpath("//input[@formcontrolname=\"state\" and @data-test=\"state\" and @id=\"state\" and @type=\"text\" and @placeholder=\"Your State *\" and @class=\"form-control ng-pristine ng-invalid ng-touched\"]\n")).sendKeys("Mazowsze");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 
         driver.findElement(By.id("postcode")).sendKeys("12-123");
@@ -34,7 +33,7 @@ public class CheckOut {
         driver.findElement(By.xpath("//button[@data-test=\"proceed-3\"]")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 
-        driver.findElement(By.xpath("//select[@data-test=\"payment-method\" and @id=\"payment-method\" and @class=\"form-select ng-dirty ng-valid ng-touched\"]\n")).click();
+        driver.findElement(By.xpath("///select[@id='payment-method']\n")).click();
         driver.findElement(By.xpath("//option[@value=\"1: Bank Transfer\"]\n")).click();
         driver.findElement(By.id("account-name")).sendKeys("Jan Nowak");
         driver.findElement(By.id("account-number")).sendKeys("123456789123456789");

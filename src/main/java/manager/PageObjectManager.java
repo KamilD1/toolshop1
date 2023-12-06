@@ -1,5 +1,6 @@
 package manager;
 
+import calc.CalcPage;
 import checkout.AddProduct;
 import checkout.CheckOut;
 import org.example.*;
@@ -16,6 +17,7 @@ public class PageObjectManager {
     NoMailLogin noMailLogin;
     AddProduct addProduct;
     CheckOut checkOut;
+    CalcPage calcPage;
     WebDriver driver;
 
     public PageObjectManager(WebDriver driver){
